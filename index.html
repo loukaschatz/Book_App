@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script src="https://kit.fontawesome.com/1654f8d90f.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <title>Booklist Application</title>
+    </head>
+<body>
+    <div class="container mt-4">
+        <h1 class="display-4 text-center">
+            <i class="fas fa-book-open text-success"></i><span class="text-success">Book</span>List</h1>
+            <form id="book-form">
+              <div id="form-group">
+                <label for="title">Book Title</label>
+                <input type="text" id="title" class="form-control">
+              </div>
+              <div id="form-group">
+                <label for="author">Book Author</label>
+                <input type="text" id="author" class="form-control">
+              </div>
+              <div id="form-group">
+                <label for="code">Book Code</label>
+                <input type="text" id="code" class="form-control">
+              </div>
+              <input type="submit" value="Book Add" class="btn btn-success btn-block">
+            </form>
+            <table class="table table-stripped mt-5">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Code</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="book-list"></tbody>
+            </table>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
